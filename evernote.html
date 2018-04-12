@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <body>
+
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+      <button class="w3-bar-item w3-button w3-large"
+      onclick="w3_close()">Close &times;</button>
+    </div>
+
+    <div id="main">
+
+    <div class="w3-teal">
+      <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+      <div class="w3-container">
+        <h1> </h1>
+      </div>
+    </div>
+    <form id="newNoteForm" action="index.html" method="post">
+      <input type ="text" id="newNoteTitle" placeholder="New Note Title"></input><br>
+      <textarea form="newNoteForm" id="newNoteBody" placeholder="New Note Body"></textarea><br>
+      <input type="submit" id="submitCreateNote" value="Create a new note"></input>
+    </form>
+
+    <script src='user.js'> </script>
+    <script src='note.js'> </script>
+    <script src='evernote.js'> </script>
+
+    <p>
+      <form id="editNoteForm" action="index.html" style="visibility: hidden" method="post">
+        <input type ="text" id="editNoteTitle" placeholder="Edit Note Title"></input><br>
+        <textarea form="editNoteForm" id="editNoteBody" placeholder="Edit Note Body"></textarea><br>
+        <input type="submit" id="submitCreateNote" value="Create a edit note"></input>
+      </form>
+    </p>
+
+    </div>
+
+  </body>
+</html>
